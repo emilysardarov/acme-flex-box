@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Layout</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#" id="home">Hawkins' Laboratory</a>
+        <a href="#" id="selected" class="top-links">Users</a>
+        <a href="#" class="top-links">Departments</a>
+        <a href="#" class="top-links">Contact Us</a>
+    </nav>
+    <div id="users">
+        <h1>Users</h1>
+    </div>
+    <fieldset>
+        <legend>Create a User</legend>
+        <div>
+            <label>First Name</label>
+            <input type="text" name="first-name">
+        </div>
+        <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name">
+        </div>
+        <div>
+            <label for="department">Department</label>
+            <select name="department">
+                <option value="accounting">Accounting and Finance</option>
+                <option value="human-resource">Human Resources</option>
+                <option value="it">IT</option>
+                <option value="marketing">Marketing</option>
+                <option value="other" selected>Other</option>
+                <option value="sales">Sales</option>
+            </select>
+        </div>
+
+        <div id="buttons">
+            <button id="clear-button" class="buttons">Clear</button>
+            <button id="save-button" class="buttons">Save</button>
+        </div>
+
+    </fieldset>
+
+    <div id="cards">
+        <div id="card">
+            <h3>William Byers</h3>
+            <p id="bio">
+                Scelerisque non gravida odio condimentum egestas quam feugiat convallis nostra eleifend semper. Quisque
+                in viverra commodo duis sociosqu. Justo vivamus nam pretium letius facilisis curabitur sociosqu
+                ultricies taciti bibendum. Ullamcorper augue lobortis pretium imperdiet quis posuere nascetur diam
+                pulvinar est cubilia.
+            </p>
+            <p id="location">Location – Lenora Hills, CA
+                <br>
+                Department – Human Resources
+            </p>
+        </div>
+        <div id="card">
+            <h3>Jane Hopper</h3>
+            <p id="bio">Risus facilisis faucibus taciti sodales sapien eleifend. Tellus imperdiet etiam congue convallis
+                pulvinar aptent. Lorem duis vivamus litora mattis porta sem curabitur efficitur lectus leo. Vehicula
+                turpis mattis potenti at iaculis dis sociosqu nam finibus.</p>
+            <p id="location">Location – Las Vegas, NV
+                <br>
+                Department – Human Resources
+            </p>
+        </div>
+        <div id="card">
+            <h3>Michael Wheeler</h3>
+            <p id="bio">Dis tortor habitasse at fringilla netus quam. Id si molestie tortor euismod fames adipiscing
+                justo nec per. Dapibus urna phasellus natoque ac eu cras sapien. Aenean consectetuer sollicitudin
+                eleifend arcu tempus tortor natoque suscipit felis duis ac. Nulla imperdiet per eleifend himenaeos
+                egestas faucibus urna. Proin leo ex quis penatibus sem sapien metus pharetra non.</p>
+            <p id="location">Location – Hawkins, IN
+                <br>
+                Department – Human Resources
+            </p>
+        </div>
+        <div id="card">
+            <h3>Dustin Henderson</h3>
+            <p id="bio">Penatibus rutrum pellentesque purus fusce velit nunc dolor habitasse eget. Elementum tortor
+                lobortis efficitur suscipit sociosqu elit ultrices. Ipsum cubilia habitant rutrum amet dictum fermentum
+                nascetur. Mi ut integer sem justo laoreet. Curabitur turpis bibendum potenti augue lectus inceptos.
+                Lacus porta habitasse facilisi sagittis fames ad suscipit. Est cubilia nam himenaeos sollicitudin porta
+                ut malesuada faucibus sociosqu.</p>
+            <p id="location">Location – Lenora Hills, CA
+                <br>
+                Department – Human Resources
+            </p>
+        </div>
+        <div id="card">
+            <h3>Lucas Sinclair</h3>
+            <p id="bio">Himenaeos diam nisl netus sagittis placerat consequat imperdiet vulputate tempus gravida
+                ridiculus. Finibus ultrices cursus nisl sapien pretium felis nascetur mus laoreet. Taciti lectus
+                nascetur per a felis tellus habitant natoque curabitur. Duis scelerisque tortor curae leo vehicula nisl
+                velit id euismod ante aptent. Primis senectus commodo lorem auctor vulputate integer ultricies. Conubia
+                nullam taciti natoque habitasse luctus mauris auctor quis at. Dis etiam ligula habitant nostra mus eget
+                semper. Sem congue taciti tempus adipiscing tristique maecenas quisque.</p>
+        </div>
+        <div id="card">
+            <h3>Maxine Mayfield</h3>
+            <p id="bio">Suspendisse laoreet maecenas risus vehicula consequat fringilla congue. Lacus ad tincidunt
+                potenti mi dis pharetra posuere magnis inceptos sollicitudin. Quam consectetuer facilisi vehicula
+                pulvinar turpis fermentum commodo at est lacinia vivamus. Ante laoreet rhoncus litora etiam arcu cras
+                duis vitae habitant luctus. Porttitor commodo eget malesuada praesent cubilia duis vitae nullam laoreet.
+                Hac accumsan nisl congue pellentesque praesent quis montes.</p>
+        </div>
+        <div id="card">
+            <h3>Erica Sinclair</h3>
+            <p id="bio">Donec sollicitudin ad commodo dis letius lobortis nibh consectetuer aliquet placerat tellus.
+                Penatibus aliquam nascetur proin mattis lectus pulvinar. Bibendum vehicula quis nulla facilisis posuere
+                eleifend. Congue faucibus at rhoncus lacus magna facilisi malesuada cras maximus integer. Torquent porta
+                senectus elementum consectetur nulla nostra dis nam duis. Phasellus aliquet montes mus conubia letius
+                rhoncus feugiat imperdiet nisl tristique dui. Habitasse duis vitae enim fames donec integer. Nibh quam
+                lectus lobortis sagittis bibendum erat faucibus fames euismod nostra libero.</p>
+        </div>
+        <div id="card">
+            <h3>Nancy Wheeler</h3>
+            <p id="bio">Dictumst quis libero odio ad maximus at curabitur sociosqu. Quis suscipit viverra fusce volutpat
+                nostra euismod himenaeos eros. Himenaeos eros interdum sem malesuada ullamcorper hendrerit phasellus.
+                Natoque mauris tincidunt purus est sollicitudin ex. Blandit nulla dis lorem parturient eleifend.
+                Pellentesque torquent sociosqu consequat aptent duis tristique. Cras lacinia ac eros montes curabitur.
+            </p>
+        </div>
+        <div id="card">
+            <h3>Edward Munson</h3>
+            <p id="bio">Aliquam suspendisse justo sed inceptos augue senectus orci ex nam. Quis sapien vivamus nostra
+                habitant parturient lacinia eu. Molestie massa fusce hac tincidunt fermentum ornare habitasse. Phasellus
+                sapien facilisi dignissim sagittis quis pharetra.</p>
+        </div>
+        <div id="card">
+            <h3>Steven Harrington</h3>
+            <p id="bio">Non mus ornare natoque pharetra phasellus dui venenatis tristique vitae aliquet. Vel senectus
+                integer nec justo euismod leo rhoncus semper dignissim. Arcu dictum eget morbi vulputate vehicula
+                posuere curabitur. Ex per vitae finibus aliquet aptent pulvinar placerat eleifend. Urna etiam lectus a
+                posuere dignissim habitasse aenean id velit. Finibus ligula mi aptent laoreet mollis fringilla nisl
+                aliquam nisi sem dolor. Erat risus nisl at nostra ipsum sociosqu cras blandit imperdiet vehicula.</p>
+        </div>
+        <div id="card">
+            <h3>Robin Buckley</h3>
+            <p id="bio">Taciti metus ultricies ante nam elementum natoque porttitor condimentum curabitur quis leo.
+                Porta maximus pede est massa euismod elementum tempus egestas. Consectetuer pretium ligula accumsan
+                libero habitant. Sed sem morbi vitae nec fusce magnis dictumst. Nascetur nec luctus dis lobortis
+                phasellus fermentum.</p>
+        </div>
+        <div id="card">
+            <h3>Jonathan Byers</h3>
+            <p id="bio">Convallis curae dictumst donec duis phasellus primis accumsan hac. Cursus viverra cras phasellus
+                massa primis. Arcu dictumst proin non nostra nibh facilisis eros faucibus praesent nam rutrum. Velit
+                bibendum condimentum purus leo mauris.</p>
+        </div>
+        <div id="card">
+            <h3>James Hopper</h3>
+            <p id="bio">Phasellus suspendisse fermentum eu ad id vulputate aliquet convallis finibus malesuada dictum.
+                Consectetur porttitor felis si feugiat erat ante pede vivamus. Hac integer a nec lacus euismod lectus.
+                Sagittis congue dictumst risus quam aliquam nec erat sollicitudin torquent porta fames. Velit interdum
+                porta accumsan adipiscing nisl class ex.</p>
+        </div>
+        <div id="card">
+            <h3>Joyce Byers</h3>
+            <p id="bio">Duis penatibus erat sapien lectus dignissim vestibulum felis imperdiet. Eleifend non venenatis
+                imperdiet ante eros suspendisse aliquet enim fames. Ante nibh porta maximus faucibus curae egestas.
+                Aenean aliquam odio vestibulum ex porttitor id class nam cras eros pretium. Interdum si ex rutrum
+                sagittis nisi nascetur magnis mattis dictum mi.</p>
+        </div>
+        <div id="card">
+            <h3>Murray Bauman</h3>
+            <p id="bio">Semper tristique justo pellentesque etiam sapien nunc si consectetur. Fames turpis mus accumsan
+                ultricies mattis. Lacus curabitur blandit imperdiet velit aenean montes sollicitudin suscipit ac mus
+                potenti. Quam bibendum elementum dapibus eleifend inceptos faucibus venenatis blandit. Fames ex donec
+                conubia litora eleifend vitae libero fringilla luctus. Facilisis ad luctus euismod pellentesque sed ut
+                enim ornare duis augue. Condimentum aliquam dictum nec proin scelerisque id efficitur interdum euismod
+                gravida.</p>
+        </div>
+        <div id="card">
+            <h3>Martin Brenner</h3>
+            <p id="bio">Ad vestibulum fermentum porta dapibus etiam mauris nascetur commodo dolor iaculis. Nec
+                consectetur vivamus netus blandit tempor. Conubia purus semper rutrum cubilia aliquet egestas. Suscipit
+                pulvinar tellus nec netus sit blandit ridiculus cras. Consectetur inceptos phasellus ac blandit dictumst
+                ex magna ultricies eget facilisi. Dictum cubilia metus malesuada quisque blandit a. Parturient magnis
+                class interdum id luctus tortor massa.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  color: darkslategrey;
+  -webkit-font-smoothing: antialised;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(12, 64, 116);
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+nav a {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 1rem;
+  flex: 1;
+}
+
+nav .top-links {
+  text-align: center;
+}
+
+nav .top-links:hover {
+  width: 50%;
+  background-color: rgb(4, 27, 49);
+  transition: ease 1s;
+  border-radius: 15px;
+}
+
+nav:first-child {
+  flex: 2;
+  text-align: left;
+}
+
+#home {
+  flex: 2;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 0.25px;
+}
+
+#selected {
+  font-weight: 700;
+  background-color: rgb(4, 27, 49);
+  border-radius: 15px;
+}
+
+#users {
+  text-align: left;
+  padding: 2rem;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 2rem);
+  margin: 0.5rem;
+}
+
+fieldset div label {
+  font-weight: bold;
+  font-size: 1rem;
+  flex: 1;
+}
+
+fieldset div input {
+  flex: 2;
+  font-size: 1rem;
+}
+
+fieldset legend {
+  font-size: 2rem;
+}
+
+fieldset {
+  margin: 4rem auto;
+  width: 50%;
+  border-color: grey;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset div select {
+  font-size: 1rem;
+  flex: 2;
+  padding: 0 2px;
+}
+
+#buttons {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.buttons {
+  height: 40px;
+  margin: 1rem;
+  width: 20%;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
+#clear-button {
+  color: darkslategrey;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+}
+
+#clear-button:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+#save-button {
+  background-color: dodgerblue;
+  color: cornsilk;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+}
+
+#save-button:hover {
+  background-color: rgb(111, 169, 227);
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+#cards {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#card {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  padding: 1rem;
+  background: white;
+  flex-basis: 20%;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 15px;
+  margin: 1rem;
+  overflow: scroll;
+}
+
+#card h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  nav,
+  fieldset div {
+    flex-direction: column;
+  }
+  fieldset {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+  #card {
+    flex-basis: 100%;
+    height: max-content;
+  }
+  #buttons {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+#bio {
+  color: black;
+}
